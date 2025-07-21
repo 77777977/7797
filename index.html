@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정민석 인터내셔널</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0e6; /* 연한 베이지 */
+            color: #333;
+        }
+        header {
+            background-color: #8b0000; /* 어두운 레드 */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 25px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #b22222; /* firebrick red */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8b0000; /* dark red */
+        }
+        video {
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #8b0000;
+        }
+        a {
+            color: #b22222;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>정민석 인터내셔널</h1> 
+        <p>세상을 바꾸는 한 줄의 코드</p>
+        <button id="introBtn">자기소개 보기</button>
+    </header>
+
+    <section id="selfIntro">
+        <h2>자기소개</h2>
+        <p>안녕하세요, 저는 개발자 <strong>정민석</strong>입니다. 창의적인 아이디어로 스타트업을 만들고 있습니다. 821057757508</p>
+        <video controls width="300">
+            <source src="ll.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="companyInfo">
+        <h2>회사 소개</h2>
+        <p>정민석 인터내셔널은 친환경 소비를 돕는 모바일 플랫폼을 개발 중입니다.</p>
+        <ul>
+            <li>탄소 발자국 계산</li>
+            <li>친환경 아이템 추천</li>
+            <li>플라스틱 소비 패턴 분석</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>문의하기</h2>
+        <p>Email: jungms305@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/wjdalstjr" target="_blank">github.com/wjdalstjr</a></p>
+    </section>
+
+    <script>
+        document.getElementById("introBtn").addEventListener("click", function () {
+            document.getElementById("selfIntro").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>
